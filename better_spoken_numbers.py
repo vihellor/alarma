@@ -4,10 +4,25 @@ from math import floor
 num2words = {0: 'Cero ', 1: 'Uno ', 2: 'Dos ', 3: 'Tres ', 4: 'Cuatro ', 5: 'Cinco ',
              6: 'Seis ', 7: 'Siete ', 8: 'Ocho ', 9: 'Nueve ', 10: 'Diez ',
             11: 'Once ', 12: 'Doce ', 13: 'Trece ', 14: 'Catorce ',
-            15: 'Quince ', 16: ' ', 17: 'Seventeen ', 18: 'Eighteen ',
-            19: 'Nineteen ', 20: 'Veinte ', 30: 'Treinta ', 40: 'Cuarenta ',
+            15: 'Quince ', 16: 'Dieciséis ', 17: 'Diecisiete ', 18: 'Dieciocho ', 19: 'Diecinueve ', 20: 'Veinte ', 30: 'Treinta ', 40: 'Cuarenta ',
             50: 'Cincuenta ', 60: 'Sesenta ', 70: 'Setenta ', 80: 'Ochenta ',
             90: 'Noventa '}
+
+num2clima = {0: ' Tornado ', 1: ' Tormenta tropical ', 2: ' huracán ', 3: ' Tormentas electricas severas ', 
+             4: ' Tormentas electricas ', 5: ' Combinación de lluvia y nieve ',
+             6: ' Combinación de lluvia y aguanieve ', 7: ' Combinación de nieve y aguanieve ',
+             8: ' Llovizna helada ', 9: ' Llovizna ', 10: ' lluvia helada ',
+            11: 'Once ', 12: 'Doce ', 13: 'Trece ', 14: 'Catorce ',
+            15: 'Quince ', 16: 'Veinte ', 17: 'Veinte ', 18: 'Veinte ',
+            19: 'Veinte ', 20: 'Veinte ', 21: 'Veinte ', 22: 'Veinte ',
+            23: 'Veinte ', 24: 'Veinte ', 25: 'Veinte ', 26: 'Veinte ',
+            27: 'Veinte ', 28: 'Veinte ', 29: 'Veinte ', 30: 'Veinte ',
+            31: 'Veinte ', 32: 'Veinte ', 33: 'Veinte ', 34: 'Veinte ',
+            35: 'Veinte ', 36: 'Veinte ', 37: 'Veinte ', 38: 'Veinte ',
+            39: 'Veinte ', 40: 'Veinte ', 41: 'Veinte ', 42: 'Veinte '
+            43: 'Veinte ', 44: 'Veinte ', 45: 'Veinte ', 46: 'Veinte '
+            47: 'Veinte ', 3200: 'No disponible'}
+
 num2cient = {1: 'ciento ', 2: 'Doscientos ', 3: 'Trescientos ', 4: 'Cuatrocientos ', 5: 'Quinientos ',
              6: 'Seiscientos ', 7: 'Setecientos ', 8: 'Ochocientos ', 9: 'Novecientos '}
             
@@ -20,11 +35,8 @@ num2day = {0: 'Domingo ', 1: 'Lunes ', 2: 'Martes ', 3: 'Miercoles ', 4: 'Jueves
 
 
 def n2w(n):
-  if n<=15:
+  if n<=20:
     return num2words[n]
-  elif n<20:
-    words= 'diez y '
-    words+= num2words[n%10]
   elif n<100:
     words=num2words[n-n%10]
     if n%10>0:
@@ -79,4 +91,5 @@ def n2d(n):
     return num2day[n]
   except KeyError:
     return 'dia fuera de rango'
+
 
