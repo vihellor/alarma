@@ -7,7 +7,7 @@ from apcontent import alarmpi_content
 
 class greeting(alarmpi_content):
   def build(self):
-    day_of_month=str(bsn.d2w(int(time.strftime("%d"))))
+    day_of_month=str(int(time.strftime("%d")))
 
     now = time.strftime("%A %B ") + day_of_month + ',' + time.strftime(" %I %M %p")
 
