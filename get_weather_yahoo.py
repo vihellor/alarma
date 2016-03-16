@@ -32,8 +32,8 @@ class weather_yahoo(alarmpi_content):
         current = response_dictionary['query']['results']['channel']['item']['condition']['temp']
         current_low = response_dictionary['query']['results']['channel']['item']['forecast'][0]['low']
         current_high = response_dictionary['query']['results']['channel']['item']['forecast'][0]['high']
-        conditions = response_dictionary['query']['results']['channel']['item']['condition']['text']
-        forecast_conditions = response_dictionary['query']['results']['channel']['item']['forecast'][0]['text']
+        conditions = response_dictionary['query']['results']['channel']['item']['condition']['code']
+        forecast_conditions = response_dictionary['query']['results']['channel']['item']['forecast'][0]['code']
         wind = response_dictionary['query']['results']['channel']['wind']['speed']
         wind_chill = response_dictionary['query']['results']['channel']['wind']['chill']
         sunrise = response_dictionary['query']['results']['channel']['astronomy']['sunrise']
@@ -54,37 +54,37 @@ class weather_yahoo(alarmpi_content):
 
 
         if conditions != forecast_conditions:
-          conditions = conditions + ' becoming ' + forecast_conditions 
-        weather_yahoo = 'Weather for today is ' + str(conditions) + ' currently ' + str(current) + ' degrees with a low of ' + str(current_low) + ' and a high of ' + str(current_high) + '.  '
+          conditions = conditions + ' volviendose ' + forecast_conditions 
+        weather_yahoo = 'El clima de esta día es ' + str(conditions) + ' actualmente ' + str(current) + ' grados con una mínima de ' + str(current_low) + ' y una máxima de ' + str(current_high) + '.  '
 
     # Wind uses the Beaufort scale
         if self.sconfig['metric'] == str(1) and self.sconfig['wind'] == str(1):
           if wind < 1:
-              gust = 'It is calm'
+              gust = 'Sin viento'
           if wind > 1:
-              gust = 'With Light Air'
+              gust = 'Con un poco de aire'
           if wind > 5:
-              gust = 'With a light breeze'
+              gust = 'Con una brisa ligera'
           if wind > 12:
-              gust = 'With a gentle breeze'
+              gust = 'Con una suave brisa'
           if wind > 20:
-              gust = 'With a moderate breeze'
+              gust = 'Con una brisa moderada'
           if wind > 29:
-              gust = 'With a fresh breeze'
+              gust = 'Con una brisa fuerte'
           if wind > 39:
-              gust = 'With a strong breeze'
+              gust = 'Con una brisa extrema'
           if wind > 50:
-              gust = 'With High winds at ' + wind + 'kilometres per hour'
+              gust = 'Grandes vientos a ' + wind + ' kilometros por hora'
           if wind > 62:
-              gust = 'With Gale force winds at ' + wind + 'kilometres per hour'
+              gust = 'Con tormenta a' + wind + ' kilometros por hora'
           if wind > 75:
-              gust = 'With a strong gale at ' + wind + 'kilometres per hour'
+              gust = 'Con tormenta grande y vientos ' + wind + ' kilometros por hora'
           if wind > 89:
-              gust = 'With Storm winds at ' + wind + 'kilometres per hour'
+              gust = 'Con vientos de tormenta a ' + wind + ' kilometros por hora'
           if wind > 103:
-              gust = 'With Violent storm winds at ' + wind + 'kilometres per hour'
+              gust = 'Con vientos violentos de tormenta a ' + wind + ' kilometros por hora'
           if wind > 118:
-              gust = 'With Hurricane force winds at ' + wind + 'kilometres per hour'
+              gust = 'Con un huracán y vientos de ' + wind + ' kilometros por hora'
           if wind == '':
               gust = ''
           weather_yahoo = weather_yahoo + str(gust) + '.  '
@@ -94,7 +94,7 @@ class weather_yahoo(alarmpi_content):
             int(time.strftime("%m")) < 4 or
             wind > 5 and
             int(time.strftime("%m")) > 10):
-          weather_yahoo = weather_yahoo + ' And a windchill of ' + str(wind_chill) + '.  '
+          weather_yahoo = weather_yahoo + ' y una sensación termica ' + str(wind_chill) + '.  '
 
     except Exception:
       weather_yahoo = 'Failed to connect to Yahoo Weather.  '
