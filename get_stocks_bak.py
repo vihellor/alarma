@@ -32,14 +32,14 @@ for ticker in tickers:
 
     whole_price = floor(stock_price)
     decimal_price = floor((stock_price - whole_price)*100)
-    stock_price = bsn.n2w(int(whole_price)) + ' dollars'
+    stock_price = bsn.n2w(int(whole_price)) + ' dólares '
     if decimal_price > 0:
-      stock_price += ' and ' + bsn.n2w(int(decimal_price)) + ' cents'
+      stock_price += ' con ' + bsn.n2w(int(decimal_price)) + ' centavos'
     
-    stocks += stock_name + ' is trading at ' + stock_price + '.  '
+    stocks += stock_name + ' cotizando en ' + stock_price + '.  '
     
   except Exception:
-    stocks = 'Failed to connect to Yahoo Finance.  '
+    stocks = 'Fallo la conexion a finanzas yahoo.  '
 
 if Config.get('main','debug') == str(1):
   print stocks
