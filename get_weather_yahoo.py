@@ -94,7 +94,7 @@ class weather_yahoo(alarmpi_content):
             int(time.strftime("%m")) < 4 or
             wind > 5 and
             int(time.strftime("%m")) > 10):
-          weather_yahoo = weather_yahoo + ' y una sensación termica ' + str(wind_chill) + '.  '
+          weather_yahoo = weather_yahoo + ' y una sensación térmica de ' + str(wind_chill) + '.  '
 
     except Exception:
       weather_yahoo = 'Failed to connect to Yahoo Weather.  '
