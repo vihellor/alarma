@@ -27,13 +27,13 @@ num2day = {0: 'Domingo ', 1: 'Lunes ', 2: 'Martes ', 3: 'Miercoles ', 4: 'Jueves
 
 
 def n2w(n):
-  return String(n)
+  return n
 
 def d2w(n):
   if n == 1:
     return 'primero'
   else:
-    return String(n)
+    return n
     
 def n2m(n):
   try:
