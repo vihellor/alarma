@@ -8,9 +8,9 @@ num2words = {0: 'Cero ', 1: 'Uno ', 2: 'Dos ', 3: 'Tres ', 4: 'Cuatro ', 5: 'Cin
             50: 'Cincuenta ', 60: 'Sesenta ', 70: 'Setenta ', 80: 'Ochenta ',
             90: 'Noventa '}
 
-num2clima = {0: ' Tornado ', 1: ' Tormenta tropical ', 2: ' huracán ', 3: ' Tormentas electricas severas ', 
-             4: ' Tormentas electricas ', 5: ' Combinación de lluvia y nieve ',
-             6: ' Combinación de lluvia y aguanieve ', 7: ' Combinación de nieve y aguanieve ',
+num2clima = {0: ' Tornado ', 1: ' Tormenta tropical ', 2: ' huracan ', 3: ' Tormentas electricas severas ', 
+             4: ' Tormentas electricas ', 5: ' Combinacion de lluvia y nieve ',
+             6: ' Combinacion de lluvia y aguanieve ', 7: ' Combinacion de nieve y aguanieve ',
              8: ' Llovizna helada ', 9: ' Llovizna ', 10: ' lluvia helada ',
             11: 'Once ', 12: 'Doce ', 13: 'Trece ', 14: 'Catorce ',
             15: 'Quince ', 16: 'Veinte ', 17: 'Veinte ', 18: 'Veinte ',
