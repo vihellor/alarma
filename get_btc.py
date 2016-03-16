@@ -19,7 +19,7 @@ class btc(alarmpi_content):
       btc_price=response_dictionary['subtotal']['amount']
       whole_price = int(floor(float(btc_price)))
       decimal_price = int(floor((float(btc_price) - whole_price)*100))
-      btc_price = bsn.n2w(int(whole_price)) + ' dolares'
+      btc_price = bsn.n2w(int(whole_price)) + ' dólares'
       if decimal_price > 0:
         btc_price += ' y ' + bsn.n2w(int(decimal_price)) + ' centavos'
 
