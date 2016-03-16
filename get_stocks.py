@@ -58,7 +58,7 @@ class stocks(alarmpi_content):
 
         whole_price = floor(stock_price)
         decimal_price = floor((stock_price - whole_price)*100)
-        stock_price_spoken = bsn.n2w(int(whole_price)) + ' dólares '
+        stock_price_spoken = bsn.n2w(int(whole_price)) + ' dolares '
         if decimal_price > 0:
           stock_price_spoken += ' con ' + bsn.n2w(int(decimal_price)) + ' centavos'
         
