@@ -70,7 +70,7 @@ def d2w(n):
     
 def n2m(n):
   try:
-    return date2month[n-1]
+    return num2month[n-1]
   except KeyError:
     return 'mes fuera de rango'
     
