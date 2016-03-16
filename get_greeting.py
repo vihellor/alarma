@@ -11,7 +11,7 @@ class greeting(alarmpi_content):
     diaMes=str(bsn.d2w(int(time.strftime("%d"))))
     mes=str(bsn.n2m(int(time.strftime("%m"))))
 
-    now = diaSem +  dia + ' de ' + mes + ',' + time.strftime(" %I %M %p")
+    now = diaSem + ' ' +  diaMes + ' de ' + mes + ',' + time.strftime(" %I %M %p")
 
     if int(time.strftime("%H")) < 12:
       period = 'os dias'
