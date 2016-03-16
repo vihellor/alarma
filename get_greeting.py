@@ -7,9 +7,11 @@ from apcontent import alarmpi_content
 
 class greeting(alarmpi_content):
   def build(self):
-    day_of_month=str(int(time.strftime("%d")))
+    diaSem=str(bsn.n2d(int(time.strftime("%d"))))
+    diaMes=str(bsn.d2w(int(time.strftime("%d"))))
+    mes=str(bsn.n2m(int(time.strftime("%m"))))
 
-    now = time.strftime("%A %B ") + day_of_month + ',' + time.strftime(" %I %M %p")
+    now = diaSem +  dia + ' de ' + mes + ',' + time.strftime(" %I %M %p")
 
     if int(time.strftime("%H")) < 12:
       period = 'os dias'
