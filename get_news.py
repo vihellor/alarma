@@ -29,7 +29,7 @@ class news(alarmpi_content):
       newsfeed = newsfeed.encode('utf-8')
 
       # Today's news from BBC
-      news = 'Y ahora, Las ultimas noticias de la seccion internacional de BBC news' + newsfeed
+      news = 'Y ahora, Las ultimas noticias de la seccion internacional de BBC news ' + newsfeed
         
 
     except rss.bozo:
