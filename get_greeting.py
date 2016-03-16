@@ -7,7 +7,7 @@ from apcontent import alarmpi_content
 
 class greeting(alarmpi_content):
   def build(self):
-    diaSem=str(bsn.n2d(int(time.strftime("%d"))))
+    diaSem=str(bsn.n2d(int(time.strftime("%w"))))
     diaMes=str(bsn.d2w(int(time.strftime("%d"))))
     mes=str(bsn.n2m(int(time.strftime("%m"))))
 
