@@ -55,7 +55,7 @@ class weather_yahoo(alarmpi_content):
 
         if conditions != forecast_conditions:
           conditions = conditions + ' volviendose ' + forecast_conditions 
-        weather_yahoo = 'El clima de esta día es ' + str(conditions) + ' actualmente ' + str(current) + ' grados con una mínima de ' + str(current_low) + ' y una máxima de ' + str(current_high) + '.  '
+        weather_yahoo = 'El clima de esta dia es ' + str(conditions) + ' actualmente ' + str(current) + ' grados con una minima de ' + str(current_low) + ' y una maxima de ' + str(current_high) + '.  '
 
     # Wind uses the Beaufort scale
         if self.sconfig['metric'] == str(1) and self.sconfig['wind'] == str(1):
@@ -94,10 +94,10 @@ class weather_yahoo(alarmpi_content):
             int(time.strftime("%m")) < 4 or
             wind > 5 and
             int(time.strftime("%m")) > 10):
-          weather_yahoo = weather_yahoo + ' y una sensación térmica de ' + str(wind_chill) + '.  '
+          weather_yahoo = weather_yahoo + ' y una sensacion termica de ' + str(wind_chill) + '.  '
 
     except Exception:
-      weather_yahoo = 'Failed to connect to Yahoo Weather.  '
+      weather_yahoo = 'Fallo la conexion a clima yahoo.  '
 
     if self.debug:
       print weather_yahoo
