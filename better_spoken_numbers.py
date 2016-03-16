@@ -13,15 +13,7 @@ num2clima = {0: ' Tornado ', 1: ' Tormenta tropical ', 2: ' huracan ', 3: ' Torm
              6: ' Combinacion de lluvia y aguanieve ', 7: ' Combinacion de nieve y aguanieve ',
              8: ' Llovizna helada ', 9: ' Llovizna ', 10: ' lluvia helada ',
             11: 'Once ', 12: 'Doce ', 13: 'Trece ', 14: 'Catorce ',
-            15: 'Quince ', 16: 'Veinte ', 17: 'Veinte ', 18: 'Veinte ',
-            19: 'Veinte ', 20: 'Veinte ', 21: 'Veinte ', 22: 'Veinte ',
-            23: 'Veinte ', 24: 'Veinte ', 25: 'Veinte ', 26: 'Veinte ',
-            27: 'Veinte ', 28: 'Veinte ', 29: 'Veinte ', 30: 'Veinte ',
-            31: 'Veinte ', 32: 'Veinte ', 33: 'Veinte ', 34: 'Veinte ',
-            35: 'Veinte ', 36: 'Veinte ', 37: 'Veinte ', 38: 'Veinte ',
-            39: 'Veinte ', 40: 'Veinte ', 41: 'Veinte ', 42: 'Veinte '
-            43: 'Veinte ', 44: 'Veinte ', 45: 'Veinte ', 46: 'Veinte '
-            47: 'Veinte ', 3200: 'No disponible'}
+            15: 'Quince ', 16: 'Veinte ', 3200: 'No disponible'}
 
 num2cient = {1: 'ciento ', 2: 'Doscientos ', 3: 'Trescientos ', 4: 'Cuatrocientos ', 5: 'Quinientos ',
              6: 'Seiscientos ', 7: 'Setecientos ', 8: 'Ochocientos ', 9: 'Novecientos '}
