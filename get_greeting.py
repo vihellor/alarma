@@ -14,11 +14,11 @@ class greeting(alarmpi_content):
     now = diaSem + ' ' +  diaMes + ' de ' + mes + ',' + time.strftime(" %I %M %p")
 
     if int(time.strftime("%H")) < 12:
-      period = 'os dias'
+      period = 'os dias '
     if int(time.strftime("%H")) >= 12:
-      period = 'as tardes'
+      period = 'as tardes '
     if int(time.strftime("%H")) >= 17:
-      period = 'as noches'
+      period = 'as noches '
 
     # reads out good morning + my name
     gmt = 'Buen' + period
