@@ -55,5 +55,11 @@ def n2d(n):
     return num2day[n]
   except KeyError:
     return 'dia fuera de rango'
+    
+def n2c(n):
+  try:
+    return num2clima[n]
+  except KeyError:
+    return ' no especificado'
 
 
