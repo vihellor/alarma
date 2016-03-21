@@ -12,6 +12,7 @@ class btc(alarmpi_content):
   def build(self):
     try: 
       coinbase_url = 'https://' + self.sconfig['host'] + self.sconfig['path']
+      print coinbase_url
       coinbase_api = urllib.urlopen(coinbase_url)
       response = coinbase_api.read()
       response_dictionary = json.loads(response)
