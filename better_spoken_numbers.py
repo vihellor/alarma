@@ -19,8 +19,8 @@ num2clima = {0: ' Tornado ', 1: ' Tormenta tropical ', 2: ' huracan ', 3: ' Torm
             27: ' Mayormente nublado ', 28: ' Mayormente nublado ', 29: ' Parcialmente nublado ', 30: ' Parcialmente nublado ',
             31: ' Despejado ', 32: ' Soleado ', 33: ' Claro ', 34: ' Claro ',
             35: ' Mezcla de lluvia y granizo ', 36: ' Caliente ', 37: ' Tormenta electrica aislada ', 38: ' Tormenta electrica dispersa ',
-            39: ' Tormenta electrica dispersa ', 40: ' Chubascos dispersas ', 41: ' Fuerte nevada ', 42: ' Parcialmente nublado '
-            43: ' Fuerte nevada ', 44: ' Parcialmente nublado ', 45: ' Chubascos tormentosos ', 46: ' Chubascos de nieve '
+            39: ' Tormenta electrica dispersa ', 40: ' Chubascos dispersas ', 41: ' Fuerte nevada ', 42: ' Parcialmente nublado ',
+            43: ' Fuerte nevada ', 44: ' Parcialmente nublado ', 45: ' Chubascos tormentosos ', 46: ' Chubascos de nieve ',
             47: ' Chubascos tormentosos aislados ', 3200: 'No disponible'}
 
 
