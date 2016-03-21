@@ -9,8 +9,8 @@ num2words = {0: 'Cero ', 1: 'Uno ', 2: 'Dos ', 3: 'Tres ', 4: 'Cuatro ', 5: 'Cin
             90: 'Noventa '}
 
 num2clima = {0: ' Tornado ', 1: ' Tormenta tropical ', 2: ' huracan ', 3: ' Tormentas electricas severas ', 
-             4: ' Tormentas electricas ', 5: ' Combinación de lluvia y nieve ',
-             6: ' Combinación de lluvia y aguanieve ', 7: ' Combinación de nieve y aguanieve ',
+             4: ' Tormentas electricas ', 5: ' Combinacion de lluvia y nieve ',
+             6: ' Combinacion de lluvia y aguanieve ', 7: ' Combinacion de nieve y aguanieve ',
              8: ' Llovizna helada ', 9: ' Llovizna ', 10: ' lluvia helada ',
             11: ' Chubasco ', 12: ' Chubasco ', 13: ' Rafaga de nieve ', 14: ' Chubasco ligero de nieve ',
             15: ' Nieve que sopla ', 16: ' Nieve ', 17: ' Granizo ', 18: ' Aguanieve ',
