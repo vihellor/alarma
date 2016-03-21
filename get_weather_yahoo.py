@@ -56,7 +56,7 @@ class weather_yahoo(alarmpi_content):
 
 
         if conditions != forecast_conditions:
-          conditions = bsn.n2c(conditions) + ' volviendose ' + bsn.n2c(forecast_conditions) 
+          conditions = bsn.n2c(int(conditions)) + ' volviendose ' + bsn.n2c(int(forecast_conditions)) 
         weather_yahoo = 'El clima de esta dia es ' + str(conditions) + ' actualmente ' + str(current) + ' grados con una minima de ' + str(current_low) + ' y una maxima de ' + str(current_high) + '.  '
 
     # Wind uses the Beaufort scale
